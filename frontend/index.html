@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>RSVP Desk · Sign in</title>
+<meta name="robots" content="noindex">
+<script src="/js/theme.js"></script>
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div class="auth">
+  <section class="auth-form">
+    <a class="brand rise" href="/"><svg class="mark" viewBox="0 0 26 30" aria-hidden="true"><defs><linearGradient id="mk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2a21b"/><stop offset="1" stop-color="#c23b66"/></linearGradient></defs><path d="M2 29V13A11 11 0 0 1 24 13V29Z" fill="url(#mk)"/><path d="M7 29V14.5a6 6 0 0 1 12 0V29Z" fill="#fff" fill-opacity=".92"/><circle cx="13" cy="15" r="2.4" fill="#e2a21b"/></svg>RSVP Desk</a>
+    <div class="rise" style="--i:1">
+      <h1 id="heading">Sign in</h1>
+      <p class="lead" id="lead">Manage invitations, replies and plate counts in one calm place.</p>
+    </div>
+    <form id="form" class="rise" style="--i:2" novalidate>
+      <label class="field" id="keyField" hidden><span>Setup key (from your server settings)</span><input id="setupKey" type="password" autocomplete="off" maxlength="200"></label>
+      <label class="field" id="nameField" hidden><span>Your name</span><input id="name" type="text" autocomplete="name" maxlength="80"></label>
+      <label class="field"><span>Email</span><input id="email" type="email" autocomplete="username" inputmode="email" maxlength="254" required></label>
+      <label class="field"><span>Password</span>
+        <div class="pwrap"><input id="password" type="password" autocomplete="current-password" maxlength="100" required><button class="linkbtn" id="showpw" type="button">Show</button></div>
+      </label>
+      <p class="hint" id="pwhint" hidden>Use at least 10 characters. A short sentence works well.</p>
+      <p class="err" id="err" role="alert"></p>
+      <button class="btn" id="go" type="submit">Sign in</button>
+      <button class="linkbtn" id="swap" type="button" hidden></button>
+    </form>
+  </section>
+  <aside class="auth-art" aria-hidden="true">
+    <div class="arch" id="loginArt"></div>
+    <p>Know exactly how many plates to order.</p>
+  </aside>
+</div>
+<script src="/js/common.js"></script>
+<script src="/js/login.js"></script>
+</body>
+</html>
